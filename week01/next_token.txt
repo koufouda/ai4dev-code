@@ -1,0 +1,22 @@
+next_token.py · Εβδομάδα 1
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 1: τι «σκέφτεται» το μοντέλο για την επόμενη λέξη.
+
+Δείχνει, για κάθε token που γράφει το μοντέλο, τις 10 πιθανότερες επιλογές με τις πιθανότητές τους.
+Χρειάζεται μοντέλο που επιστρέφει logprobs (π.χ. OpenAI). Χρήση:
+    python next_token.py "Το πρωί πίνω έναν"
+    python next_token.py --max_tokens 3 "Το πρωί πίνω έναν"
+    python next_token.py --max_tokens 3 --temperature 1.5 "Το πρωί πίνω έναν"
+1 | Τις πιθανότητες για την επόμενη λέξη (χρειάζεται μοντέλο με logprobs)
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week01
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week01
+
+Μετά:  python next_token.py
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».

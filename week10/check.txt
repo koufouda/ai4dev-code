@@ -1,0 +1,17 @@
+check.py · Εβδομάδα 10
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Έλεγχος πριν από τις διαλέξεις 19-20: Python 3.11+, πακέτα (και mcp), Ollama και τοπικά μοντέλα, μοντέλο με εργαλεία, embeddings, βάση, MCP server.
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week10
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week10
+
+Μετά:
+  python check.py
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

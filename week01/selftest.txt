@@ -1,0 +1,18 @@
+selftest.py · Εβδομάδα 1
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Τρέχει όλα τα scripts του μαθήματος και γράφει τα αποτελέσματα σε ένα αρχείο.
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week01
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week01
+
+Μετά:
+  python selftest.py
+  Το αρχείο selftest_log.txt γράφεται στον φάκελο Week01 του Drive (αν υπάρχει),
+  ώστε να μπορεί να το διαβάσει ο Claude. Τα κλειδιά API δεν γράφονται ποτέ στο αρχείο.
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

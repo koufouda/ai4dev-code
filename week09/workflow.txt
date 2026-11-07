@@ -1,0 +1,22 @@
+workflow.py · Εβδομάδα 9
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 17: workflow. Ο ΚΩΔΙΚΑΣ ορίζει τα βήματα· το μοντέλο κάνει μόνο ό,τι του αναθέτει κάθε βήμα.
+
+Email παραπόνου → 1. εξαγωγή στοιχείων (LLM, σχήμα) → 2. παραγγελία (κώδικας) → 3. έγγραφα (αναζήτηση)
+→ 4. προσχέδιο απάντησης (LLM) → 5. έλεγχος (κώδικας): αποστολή ή άνθρωπος.
+Workflow 5 βημάτων για email παραπόνου
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week09
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week09
+
+Μετά:
+  python workflow.py          (τα 3 email του emails.json)
+  python workflow.py 2        (μόνο το 2ο)
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

@@ -1,0 +1,17 @@
+check.py · Εβδομάδα 11
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Έλεγχος πριν από τις διαλέξεις 21-22: Python, πακέτα, Docker, git, κλειδί, Ollama, βάση, tests.
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week11
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week11
+
+Μετά:
+  python check.py
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

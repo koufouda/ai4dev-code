@@ -1,0 +1,17 @@
+compare_chart.py · Εβδομάδα 10
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 20: γράφημα από το results.csv. Ποιότητα (κάθετα) έναντι χρόνου απάντησης (οριζόντια), με το κόστος δίπλα.
+Γράφημα ποιότητας έναντι χρόνου → compare.png
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week10
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week10
+
+Μετά:
+  python compare_chart.py      (φτιάχνει το compare.png)
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

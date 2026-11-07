@@ -1,0 +1,11 @@
+# Ό,τι χρειάζεται η εφαρμογή (και μέσα στο container).
+# Για αναπαραγώγιμα builds σε παραγωγή: pip freeze > requirements.lock και εγκατάσταση από εκεί.
+litellm
+python-dotenv
+pydantic
+fastapi
+uvicorn
+chromadb
+pymupdf
+python-docx
+rank-bm25

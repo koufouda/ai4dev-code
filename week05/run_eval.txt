@@ -1,0 +1,21 @@
+run_eval.py · Εβδομάδα 5
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 10: τρέχει το σύνολο δοκιμών και δίνει σκορ.
+Σκορ στις δοκιμές (--prompt, --model, --repeat) | 10
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week05
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week05
+
+Μετά:
+  python run_eval.py                      (prompt v2, βασικό μοντέλο)
+  python run_eval.py --prompt v1          (η παλιά εκδοχή των οδηγιών)
+  python run_eval.py --model ollama_chat/gemma3:4b
+  python run_eval.py --repeat 3           (κάθε δοκιμή 3 φορές)
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

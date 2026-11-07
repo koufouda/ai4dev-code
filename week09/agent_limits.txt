@@ -1,0 +1,18 @@
+agent_limits.py · Εβδομάδα 9
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 18: όταν ο agent δεν σταματά. Όριο βημάτων, όριο κόστους, επαναλήψεις.
+Όριο βημάτων και κόστους
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week09
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week09
+
+Μετά:
+  python agent_limits.py
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

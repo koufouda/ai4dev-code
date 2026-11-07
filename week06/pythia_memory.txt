@@ -1,0 +1,19 @@
+pythia_memory.py · Εβδομάδα 6
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Εβδομάδα 6, διάλεξη 11: κοινές συναρτήσεις για μνήμη, tokens και κόστος.
+
+Το χρησιμοποιούν τα chat_memory.py, cache_demo.py, context_limit.py, growth.py και app_chat.py.
+Κοινές συναρτήσεις: κλήση με καταγραφή κόστους, παράθυρο, σύνοψη
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week06
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week06
+
+Δεν το τρέχετε μόνο του. Είναι «βιβλιοθήκη»: το χρησιμοποιούν τα app_chat.py, cache_demo.py, chat_memory.py, check.py, context_limit.py, forget.py, growth.py.
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

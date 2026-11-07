@@ -1,0 +1,13 @@
+litellm
+python-dotenv
+tenacity
+pydantic
+fastapi
+uvicorn
+python-multipart
+chromadb
+pymupdf
+python-docx
+rank-bm25
+mcp[cli]
+matplotlib

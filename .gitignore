@@ -1,0 +1,15 @@
+# Ποτέ στο git
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+db/
+logs/
+*.jsonl
+actions.log
+results.csv
+compare.png
+~$*
+.DS_Store
+Thumbs.db

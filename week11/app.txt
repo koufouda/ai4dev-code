@@ -1,0 +1,21 @@
+app.py · Εβδομάδα 11
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Εβδομάδα 11: η Πυθία έτοιμη για παραγωγή. Το API με εργαλεία της διάλεξης 17, συν:
+/health για έλεγχο, δήλωση ότι ο χρήστης μιλά με AI, απόκρυψη προσωπικών δεδομένων, ψευδωνυμοποίηση,
+και καταγραφή κάθε αιτήματος σε logs/ΕΕΕΕ-ΜΜ-ΗΗ.jsonl (μία γραμμή JSON ανά γεγονός).
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week11
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week11
+
+Μετά:
+  uvicorn app:app --reload               (στο laptop)
+  docker compose up --build              (σε container, διάλεξη 21)
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).
+- Docker σε λειτουργία, μόνο για την εντολή docker.

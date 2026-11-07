@@ -1,0 +1,20 @@
+local_agent.py · Εβδομάδα 10
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 20: ο agent της διάλεξης 18 με τοπικό μοντέλο. Τα ίδια εργαλεία, χωρίς να φύγει τίποτα από τον υπολογιστή.
+Ο agent με τοπικό μοντέλο (--model)
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week10
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week10
+
+Μετά:
+  python local_agent.py
+  python local_agent.py --model ollama_chat/gemma4:e2b
+  python local_agent.py --model anthropic/claude-haiku-5-5 "Πόσο κάνουν 3 ΜΠ-004 με έκπτωση 10%;"
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

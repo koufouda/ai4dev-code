@@ -1,0 +1,51 @@
+ΕΒΔΟΜΑΔΑ 10 · Εντολές για αντιγραφή-επικόλληση
+Όλες τρέχουν στο C:\ai4dev\week10 με ενεργό το (.venv).
+
+=== Μία φορά (εγκατάσταση) ===
+cd C:\ai4dev
+.venv\Scripts\activate
+python --version          (πρέπει 3.11 ή νεότερη, για το mcp)
+pip install -r week10\requirements.txt
+cd week10
+python ingest.py
+ollama pull qwen3.5:4b
+ollama pull gemma4:e2b
+
+=== Πριν από κάθε διάλεξη ===
+python check.py
+del actions.log
+
+=== Διάλεξη 19 ===
+# Διαφάνεια 4 (άνοιγμα)
+python injection_agent.py
+# Διαφάνεια 12
+python mcp_client.py
+python mcp_client.py get_product "{\"code\": \"ΜΠ-002\"}"
+mcp dev pythia_mcp_server.py                  (MCP Inspector στον browser· χρειάζεται Node.js)
+# Διαφάνεια 15
+python mcp_agent.py
+# Διαφάνεια 27
+python injection_agent.py --readonly
+# Διαφάνεια 29
+python injection_agent.py --guard
+type actions.log
+# Διαφάνεια 33 (τελικό demo): Claude Desktop → Settings → Developer → Edit Config
+#   αντιγράψτε το claude_desktop_config.json, επανεκκίνηση του Claude Desktop
+
+=== Διάλεξη 20 ===
+# Διαφάνεια 4 (άνοιγμα)
+python local_agent.py
+# Διαφάνεια 11
+python local_models.py
+# Διαφάνεια 15
+python mem_calc.py
+python mem_calc.py 8
+# Διαφάνεια 18
+python speed_test.py
+# Διαφάνειες 26-27
+python compare_models.py
+python compare_chart.py
+start compare.png
+# Διαφάνεια 32 (τελικό demo)
+python local_agent.py --model ollama_chat/qwen3.5:4b "<εργασία της τάξης>"
+python local_agent.py --model anthropic/claude-haiku-5-5 "<η ίδια εργασία>"

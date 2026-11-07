@@ -1,0 +1,18 @@
+mem_calc.py · Εβδομάδα 10
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 20: πόση μνήμη θέλει ένα μοντέλο; Παράμετροι × bits ανά παράμετρο ÷ 8, συν ~20% για context και runtime.
+Πόση μνήμη θέλει ένα μοντέλο
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week10
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week10
+
+Μετά:
+  python mem_calc.py
+  python mem_calc.py 8        (μόνο για 8 δισ. παραμέτρους)
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

@@ -1,0 +1,23 @@
+eval_agent.py · Εβδομάδα 9
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 18: αξιολόγηση του agent. Σωστές απαντήσεις, βήματα, κόστος, χρόνος, γιατί σταμάτησε.
+
+agent_cases.json: για κάθε εργασία, τι πρέπει να περιέχει η απάντηση (expect, με «|» για εναλλακτικές).
+ΠΡΟΣΟΧΗ: οι ακυρώσεις γράφονται στο actions.log.
+Αξιολόγηση (--workflow, --max-steps)
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week09
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week09
+
+Μετά:
+  python eval_agent.py
+  python eval_agent.py --workflow         (οι ίδιες εργασίες με σταθερά βήματα)
+  python eval_agent.py --max-steps 4
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

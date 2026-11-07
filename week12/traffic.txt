@@ -1,0 +1,20 @@
+traffic.py · Εβδομάδα 12
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 22: κίνηση για τα logs. Στέλνει ερωτήσεις «πελατών» στην Πυθία και μερικά 👍/👎,
+για να έχουμε τι να δούμε στο dashboard.py. Χωρίς server: καλεί την εφαρμογή απευθείας (TestClient).
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week12
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week12
+
+Μετά:
+  python traffic.py                         (20 ερωτήσεις, στην εφαρμογή χωρίς server)
+  python traffic.py --n 40
+  python traffic.py --url http://localhost:8000   (στο container)
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

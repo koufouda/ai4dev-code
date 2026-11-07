@@ -1,0 +1,19 @@
+read_doc.py · Εβδομάδα 7
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 13: τι «βλέπει» ο υπολογιστής όταν διαβάζει ένα PDF ή ένα Word. Χωρίς καθάρισμα.
+Τι «βλέπει» η Python σε ένα PDF ή Word
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week07
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week07
+
+Μετά:
+  python read_doc.py docs/MP-001_Egxeiridio.pdf
+  python read_doc.py docs/Oroi_Polisis.docx
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

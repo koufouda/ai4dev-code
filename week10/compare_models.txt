@@ -1,0 +1,22 @@
+compare_models.py · Εβδομάδα 10
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 20: τα ίδια 16 τεστ σε όλα τα μοντέλα του models.txt. Ποσοστό σωστών ανά κατηγορία, χρόνος, κόστος.
+
+model_cases.json: ελληνικά, JSON, ταξινόμηση, πράξη, «δεν ξέρω», εργαλεία.
+Τα αποτελέσματα γράφονται και στο results.csv (για το compare_chart.py).
+16 δοκιμές (model_cases.json) σε όλα τα μοντέλα του models.txt → results.csv
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week10
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week10
+
+Μετά:
+  python compare_models.py
+  python compare_models.py ollama_chat/gemma3:4b anthropic/claude-haiku-5-5
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

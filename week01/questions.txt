@@ -1,0 +1,39 @@
+=== Κόψιμο internet ΜΟΝΟ σε αυτό το terminal (το Teams δεν επηρεάζεται) ===
+Windows (PowerShell):
+$env:HTTPS_PROXY="http://127.0.0.1:9"; $env:HTTP_PROXY="http://127.0.0.1:9"; $env:NO_PROXY="localhost,127.0.0.1"; $env:LITELLM_LOCAL_MODEL_COST_MAP="True"
+Mac / Linux:
+export HTTPS_PROXY=http://127.0.0.1:9 HTTP_PROXY=http://127.0.0.1:9 NO_PROXY=localhost,127.0.0.1 LITELLM_LOCAL_MODEL_COST_MAP=True
+(Για να ξαναποκτήσει internet: κλείστε το terminal και ανοίξτε νέο.)
+
+=== Διάλεξη 1 ===
+python tokens.py Θεσσαλονίκη νοημοσύνη intelligence
+python tokens.py
+python next_token.py "Το πρωί πίνω έναν"
+python next_token.py --max_tokens 3 "Το πρωί πίνω έναν"
+python next_token.py --max_tokens 3 --temperature 1.5 "Το πρωί πίνω έναν"
+python next_token.py --max_tokens 3 --temperature 0 "Το πρωί πίνω έναν"
+python chatbot.py
+Γεια, με λένε Μαρία και είμαι backend developer
+Τι δουλειά κάνω;
+messages=[history[0], {"role": "user", "content": question}]
+
+=== Διάλεξη 2 ===
+python live\step1.py
+python ask.py --local "Πες μου κάτι ενδιαφέρον για τον Μηχανισμό των Αντικυθήρων"
+python live\step2.py
+python live\step3.py
+Πες μου κάτι για τον Τάλω
+MODEL = "gemini/gemini-3.8-flash"
+MODEL = "ollama_chat/gemma3:4b"
+MODEL = "gemini/gemini-2.5-flash"
+MODEL = "anthropic/claude-haiku-5-5"
+python pythia.py "Να αλλάξω δουλειά;"
+    "Κρητικός παππούς": "Είσαι παππούς από τα Σφακιά. Απαντάς μόνο με μια μαντινάδα.",
+python temperature.py
+python stream.py
+python stream.py --local
+python ask.py --local "Εξήγησε τι είναι το API σε έναν φοιτητή φιλολογίας"
+python arena.py "Εξήγησε τη φράση «τα έκανε θάλασσα» σε έναν Ιάπωνα που μαθαίνει ελληνικά, με ένα παράδειγμα. Απάντησε σε 3 προτάσεις."
+python arena.py "Γράψε τέσσερις στίχους σε δεκαπεντασύλλαβο για έναν προγραμματιστή που ψάχνει ένα bug."
+python arena.py "Ένα τρένο φεύγει από την Αθήνα στις 10:15 και φτάνει στη Θεσσαλονίκη στις 14:40. Πόση ώρα κάνει; Αν καθυστερήσει 35 λεπτά στη Λάρισα, τι ώρα φτάνει;"
+python check.py

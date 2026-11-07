@@ -1,0 +1,8 @@
+.env
+__pycache__/
+.venv/
+db/
+cache.json
+actions.log
+results.csv
+compare.png

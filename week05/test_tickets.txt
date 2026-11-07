@@ -1,0 +1,18 @@
+test_tickets.py · Εβδομάδα 5
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 10: το σύνολο δοκιμών ως κανονικά tests του pytest.
+Οι δοκιμές ως pytest (pytest -v test_tickets.py) | 10
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week05
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week05
+
+Μετά:
+  pytest -v test_tickets.py
+  Κάθε test καλεί το μοντέλο, άρα κοστίζει λίγο και χρειάζεται δίκτυο.
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».

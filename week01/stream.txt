@@ -1,0 +1,19 @@
+stream.py · Εβδομάδα 1
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 2: streaming. Το κείμενο εμφανίζεται καθώς παράγεται.
+2 | Streaming και χρόνος μέχρι την πρώτη λέξη
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week01
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week01
+
+Μετά:
+  python stream.py "Γράψε μια σύντομη ιστορία για τον Τάλω."
+  python stream.py --local "..."
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

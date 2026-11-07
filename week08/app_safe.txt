@@ -1,0 +1,19 @@
+app_safe.py · Εβδομάδα 8
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 15: η Πυθία ως API, με άμυνες. Έλεγχος εγγράφων στο ανέβασμα, παραπομπές και «δεν ξέρω» στην απάντηση.
+API με άμυνες: uvicorn app_safe:app --reload
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week08
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week08
+
+Μετά:
+  uvicorn app_safe:app --reload
+  και στον browser: http://127.0.0.1:8000/docs
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

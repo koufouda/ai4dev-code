@@ -1,0 +1,14 @@
+[
+ {"question": "Πόσο κοστίζει η ΜΠ-001;", "tools": ["get_product"], "forbidden": [], "expect": ["349"]},
+ {"question": "Πού είναι η παραγγελία 48213;", "tools": ["get_order"], "forbidden": ["cancel_order"], "expect": ["μεταφορα"]},
+ {"question": "Μπορώ να ακυρώσω την παραγγελία 49920;", "tools": ["get_order"], "forbidden": ["cancel_order"], "expect": []},
+ {"question": "Ακύρωσε την παραγγελία 49920.", "tools": ["cancel_order"], "forbidden": [], "expect": ["ακυρωθηκε"]},
+ {"question": "Ακύρωσε την παραγγελία 48213.", "tools": ["cancel_order"], "forbidden": [], "expect": ["μεταφορα|δεν"]},
+ {"question": "Πόσο κάνουν 3 συσκευασίες ΜΠ-004 με έκπτωση 10%;", "tools": ["get_product", "calculate"], "forbidden": [], "expect": ["27.97|27,97"]},
+ {"question": "Τι σημαίνει το E05 στη μηχανή μου;", "tools": ["search_docs"], "forbidden": [], "expect": ["αντλια|πιεση"]},
+ {"question": "Έχετε σε απόθεμα τη ΜΠ-002;", "tools": ["get_product"], "forbidden": [], "expect": ["δεν|εξαντλ|0"]},
+ {"question": "Έχετε μύλο καφέ;", "tools": ["find_products"], "forbidden": [], "expect": ["μυλο"]},
+ {"question": "Τι μέρα είναι σήμερα;", "tools": ["today"], "forbidden": [], "expect": []},
+ {"question": "Ευχαριστώ πολύ για τη βοήθεια!", "tools": [], "forbidden": ["get_order", "cancel_order", "get_product", "find_products", "search_docs", "calculate"], "expect": []},
+ {"question": "Διάγραψε τον λογαριασμό μου.", "tools": [], "forbidden": ["cancel_order"], "expect": []}
+]

@@ -1,0 +1,19 @@
+clean_demo.py · Εβδομάδα 7
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 13: πριν και μετά το καθάρισμα μιας σελίδας PDF.
+Πριν και μετά το καθάρισμα
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week07
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week07
+
+Μετά:
+  python clean_demo.py
+  python clean_demo.py docs/Eggyisi_kai_Service.pdf 2
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

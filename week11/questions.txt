@@ -1,0 +1,57 @@
+ΕΒΔΟΜΑΔΑ 11 · Εντολές για αντιγραφή-επικόλληση
+Όλες τρέχουν στο C:\ai4dev\week11 με ενεργό το (.venv), σε PowerShell.
+
+=== Μία φορά (εγκατάσταση) ===
+cd C:\ai4dev
+.venv\Scripts\activate
+pip install -r week11\requirements.txt -r week11\requirements-dev.txt
+cd week11
+python ingest.py
+python -c "import secrets; print(secrets.token_hex(16))"      (το αποτέλεσμα στο C:\ai4dev\.env ως PSEUDO_SALT=...)
+
+=== Πριν από κάθε διάλεξη ===
+python check.py
+
+=== Διάλεξη 21 ===
+# Διαφάνεια 4
+(pip list --format=freeze).Count
+python --version
+# Διαφάνεια 13
+docker build -t pythia .
+docker images pythia
+# Διαφάνεια 15
+docker compose up --build -d
+docker ps
+python smoke_test.py
+docker compose logs -f
+docker compose down
+# Διαφάνεια 20
+python secret_scan.py
+# Διαφάνεια 26
+pytest -v
+# Διαφάνεια 30
+git add . ; git commit -m "Πυθία: Docker και CI" ; git push
+#   GitHub → Actions → Pythia CI → Run workflow (για το eval)
+# Διαφάνεια 32 (τελικό demo): αλλάξτε την περιγραφή του cancel_order στο pythia_tools.py, μετά
+pytest -q
+python ci_eval.py
+
+=== Διάλεξη 22 ===
+# Διαφάνεια 4
+Remove-Item logs\*
+python traffic.py
+Get-Content (Get-ChildItem logs\*.jsonl | Select-Object -Last 1) -Tail 1
+# Διαφάνειες 14, 16
+python dashboard.py
+python dashboard.py --budget 0.001
+# Διαφάνεια 25
+python privacy.py --export user3
+python privacy.py --erase user3
+python privacy.py --retention 30
+# Διαφάνεια 34 (τελικό demo)
+docker compose up -d
+python traffic.py --url http://localhost:8000 --n 30
+python dashboard.py
+python privacy.py --erase user2
+python dashboard.py
+pytest -q

@@ -1,0 +1,49 @@
+ΕΒΔΟΜΑΔΑ 5 · Εντολές για αντιγραφή-επικόλληση
+Όλες τρέχουν στο C:\ai4dev\week05 με ενεργό το (.venv).
+
+=== Πριν από κάθε διάλεξη ===
+python check.py
+
+=== Διάλεξη 9 ===
+# Διαφάνεια 3
+python prompt_vs.py
+# Διαφάνεια 12 (δραστηριότητα)
+python prompt_vs.py samples/06_dipli_xreosi.txt
+# Διαφάνεια 17
+python few_shot.py
+# Διαφάνεια 23
+python json_please.py
+# Διαφάνεια 27
+python ticket.py
+python ticket.py samples/09_greeklish.txt
+python ticket.py --local samples/01_kathysterisi.txt
+# Διαφάνεια 28
+python ticket.py samples/10_xoris_arithmo.txt
+# Διαφάνεια 30
+python ticket.py samples/08_injection.txt
+# Διαφάνεια 35 (server σε δικό του terminal, Ctrl+C για τέλος)
+uvicorn app:app --reload
+# browser: http://127.0.0.1:8000/docs  ->  POST /ticket -> Try it out
+{"text": "Η μηχανή στάζει νερό και η παραγγελία 50111 ήρθε χθες."}
+# Διαφάνεια 38
+python inbox.py
+python inbox.py --local
+
+=== Διάλεξη 10 ===
+# Διαφάνεια 17
+python run_eval.py --prompt v1
+python run_eval.py --prompt v2
+# Διαφάνεια 20
+python run_eval.py --repeat 3
+# Διαφάνεια 22
+python run_eval.py --model ollama_chat/gemma3:4b
+python run_eval.py
+# Διαφάνεια 30
+python judge.py
+# Διαφάνεια 36
+pytest -v test_tickets.py
+# Διαφάνεια 38: νέα δοκιμή στο eval_cases.json (κόμμα ανάμεσα στα {...})
+{"file": "samples/11_eironeia.txt", "category": "τεχνικό πρόβλημα", "priority": "μεσαία", "order_number": null}
+# Διαφάνεια 41
+python run_eval.py --prompt v2
+python run_eval.py --prompt v3

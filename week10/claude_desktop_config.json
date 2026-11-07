@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "pythia": {
+      "command": "C:\\ai4dev\\.venv\\Scripts\\python.exe",
+      "args": ["C:\\ai4dev\\week10\\pythia_mcp_server.py"]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+app.py · Εβδομάδα 5
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 9: η Πυθία ως API. Το ticket γίνεται endpoint του FastAPI.
+Το ticket ως API (uvicorn app:app --reload, μετά http://127.0.0.1:8000/docs) | 9
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week05
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week05
+
+Μετά:
+  uvicorn app:app --reload
+  και στον browser: http://127.0.0.1:8000/docs
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».

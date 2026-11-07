@@ -1,0 +1,19 @@
+compare.py · Εβδομάδα 7
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 14: η ίδια ερώτηση με τρεις τρόπους αναζήτησης, δίπλα-δίπλα. Τρέξτε πρώτα το ingest.py.
+Η ίδια ερώτηση με vector, BM25, hybrid
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week07
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week07
+
+Μετά:
+  python compare.py "Τι σημαίνει το E05;"
+  python compare.py "η καφετιέρα κάνει λίμνη από κάτω"
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

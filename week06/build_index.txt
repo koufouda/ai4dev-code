@@ -1,0 +1,20 @@
+build_index.py · Εβδομάδα 6
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 12: βάζουμε το FAQ σε vector database (Chroma), μία φορά.
+
+Τα διανύσματα αποθηκεύονται στον φάκελο db/. Το search.py τα διαβάζει από εκεί,
+χωρίς να ξαναϋπολογίζει τα embeddings του FAQ.
+Το FAQ στη βάση Chroma (φάκελος db/)
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week06
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week06
+
+Μετά:
+  python build_index.py
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

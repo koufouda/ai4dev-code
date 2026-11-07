@@ -1,0 +1,15 @@
+{
+  "editor.fontSize": 22,
+  "terminal.integrated.fontSize": 20,
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
+  "workbench.startupEditor": "none",
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+  "python.terminal.activateEnvironment": true,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "files.exclude": {
+    ".env": true,
+    "**/__pycache__": true,
+    ".venv": true
+  }
+}

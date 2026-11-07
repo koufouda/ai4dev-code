@@ -1,0 +1,22 @@
+injection_agent.py · Εβδομάδα 10
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 19: ο agent διαβάζει email πελατών. Ένα από αυτά περιέχει κρυφή εντολή.
+Χωρίς φύλακα: ό,τι αποφασίσει το μοντέλο. Με φύλακα: κάθε ακύρωση μετά από μη έμπιστο κείμενο θέλει έγκριση.
+Ο agent διαβάζει email με κρυφή εντολή (--guard, --auto, --readonly)
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week10
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week10
+
+Μετά:
+  python injection_agent.py                 (χωρίς φύλακα)
+  python injection_agent.py --guard         (με φύλακα: σας ρωτά για κάθε ακύρωση)
+  python injection_agent.py --guard --auto  (με φύλακα, αυτόματο «όχι»)
+  python injection_agent.py --readonly      (χωρίς το cancel_order: ελάχιστα δικαιώματα)
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

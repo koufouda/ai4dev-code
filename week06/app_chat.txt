@@ -1,0 +1,19 @@
+app_chat.py · Εβδομάδα 6
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 11: η Πυθία ως API συνομιλίας. Κάθε session έχει τη δική του μνήμη.
+API συνομιλίας με μνήμη ανά χρήστη (uvicorn app_chat:app --reload)
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week06
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week06
+
+Μετά:
+  uvicorn app_chat:app --reload
+  και στον browser: http://127.0.0.1:8000/docs
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

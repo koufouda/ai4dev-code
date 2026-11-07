@@ -1,0 +1,69 @@
+ΕΒΔΟΜΑΔΑ 7 · Εντολές για αντιγραφή-επικόλληση
+Όλες τρέχουν στο C:\ai4dev\week07 με ενεργό το (.venv).
+
+=== Μία φορά (εγκατάσταση) ===
+cd C:\ai4dev
+.venv\Scripts\activate
+pip install -r week07\requirements.txt
+cd week07
+
+=== Πριν από κάθε διάλεξη ===
+python check.py
+python ingest.py
+
+=== Διάλεξη 13 ===
+# Διαφάνεια 4
+python no_rag.py
+# Διαφάνεια 13
+python read_doc.py docs/MP-001_Egxeiridio.pdf
+# Διαφάνεια 17
+python clean_demo.py
+# Διαφάνεια 18
+python read_doc.py docs/Oroi_Polisis.docx
+# Διαφάνεια 23
+python chunk_demo.py --naive
+# Διαφάνεια 25
+python chunk_demo.py
+python chunk_demo.py --size 400
+python chunk_demo.py --file docs/Oroi_Polisis.docx
+# Διαφάνεια 30
+python ingest.py
+# Διαφάνεια 33
+python ask.py "Πόσους μήνες εγγύηση έχει η ΜΠ-001 και τι δεν καλύπτει;" --show
+# Διαφάνεια 34
+python ask.py "Πόσο κοστίζει η ΜΠ-001;" --show
+# Διαφάνεια 35
+python ask.py
+# Διαφάνεια 40 (server σε δικό του terminal, Ctrl+C για τέλος)
+uvicorn app_rag:app --reload
+# browser: http://127.0.0.1:8000/docs -> POST /upload -> Try it out -> Choose File
+# POST /ask:
+{"question": "Σε πόσες δόσεις μπορώ να πάρω μηχανή των 400 ευρώ;"}
+
+=== Διάλεξη 14 ===
+# Διαφάνεια 3
+python compare.py "Τι σημαίνει το E05;"
+# Διαφάνεια 10
+python eval_retrieval.py --method vector
+# Διαφάνεια 16
+python bm25_demo.py "ΕΓΓΥΗΣΗ μηχανης"
+python bm25_demo.py E05
+# Διαφάνεια 18
+python eval_retrieval.py --method bm25
+python eval_retrieval.py --method bm25 --no-stem
+# Διαφάνεια 23
+python eval_retrieval.py --all
+# Διαφάνεια 24: νέα δοκιμή στο rag_cases.json
+{"question": "…", "must_contain": "…", "source": "…"}
+# Διαφάνεια 30
+python rerank_demo.py "Μπορώ να επιστρέψω καφέ που άνοιξα;"
+# Διαφάνεια 32
+python eval_retrieval.py --rerank
+# Διαφάνεια 35
+python eval_retrieval.py --size 300
+python eval_retrieval.py --size 800
+python eval_retrieval.py --size 1500
+# Διαφάνεια 39
+python ask.py "Η οθόνη γράφει E05, τι κάνω;" --method vector --show
+python ask.py "Η οθόνη γράφει E05, τι κάνω;" --method hybrid --rerank --show
+python ask.py --method hybrid --rerank

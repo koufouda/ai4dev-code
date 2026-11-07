@@ -1,0 +1,19 @@
+ask.py · Εβδομάδα 1
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 2: η πρώτη κλήση. Μία ερώτηση, μία απάντηση, και τι κόστισε.
+2 | Μία κλήση με χρόνο, tokens και κόστος. Με --local τρέχει στο Ollama
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week01
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week01
+
+Μετά:
+  python ask.py "Ποια είναι η πρωτεύουσα της Κρήτης;"
+  python ask.py --local "..."   (τοπικό μοντέλο μέσω Ollama)
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

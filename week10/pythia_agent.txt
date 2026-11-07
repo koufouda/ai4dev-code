@@ -1,0 +1,19 @@
+pythia_agent.py · Εβδομάδα 10
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Εβδομάδα 9-10: ο agent. Ο βρόχος σκέψη → ενέργεια → παρατήρηση, με όρια.
+
+Χτίζει πάνω στο pythia_tools.py (διάλεξη 17). Νέο στη διάλεξη 19: η παράμετρος check,
+ένας «φύλακας» που κρίνει κάθε κλήση εργαλείου ΠΡΙΝ εκτελεστεί (pythia_guard.py).
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week10
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week10
+
+Δεν το τρέχετε μόνο του. Είναι «βιβλιοθήκη»: το χρησιμοποιούν τα injection_agent.py, local_agent.py, mcp_agent.py.
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

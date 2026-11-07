@@ -1,0 +1,18 @@
+tests/test_pythia.py · Εβδομάδα 12
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 21: tests που τρέχουν ΧΩΡΙΣ κλειδί και χωρίς μοντέλο. Γρήγορα και δωρεάν: σε κάθε αλλαγή, στο CI.
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week12
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week12
+
+Μετά:
+  pytest            (από τον φάκελο week11)
+  pytest -v         (με το όνομα κάθε test)
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

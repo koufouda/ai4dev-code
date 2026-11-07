@@ -1,0 +1,19 @@
+guard_demo.py · Εβδομάδα 8
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 16: guardrail εισόδου. Τα προσωπικά δεδομένα κρύβονται ΠΡΙΝ φύγουν προς το μοντέλο.
+Προσωπικά δεδομένα πριν και μετά
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week08
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week08
+
+Μετά:
+  python guard_demo.py
+  python guard_demo.py "Η κάρτα μου 4111 1111 1111 1111 χρεώθηκε δύο φορές"
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

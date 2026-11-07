@@ -1,0 +1,70 @@
+ΕΒΔΟΜΑΔΑ 6 · Εντολές για αντιγραφή-επικόλληση
+Όλες τρέχουν στο C:\ai4dev\week06 με ενεργό το (.venv).
+
+=== Μία φορά (εγκατάσταση) ===
+cd C:\ai4dev
+.venv\Scripts\activate
+pip install -r week06\requirements.txt
+ollama pull embeddinggemma
+cd week06
+
+=== Πριν από κάθε διάλεξη ===
+python check.py
+
+=== Διάλεξη 11 ===
+# Διαφάνεια 7
+python forget.py
+# Διαφάνεια 10
+python growth.py
+# Διαφάνεια 13
+python context_limit.py
+python context_limit.py --ctx 16384
+# Διαφάνεια 18
+python chat_memory.py --auto --strategy window
+# Διαφάνεια 20
+python chat_memory.py --auto --strategy summary
+# Διαφάνεια 29
+python cache_demo.py
+python cache_demo.py --no-cache
+# Διαφάνεια 35
+python costs_report.py
+# Διαφάνεια 36
+python chat_memory.py --auto --budget 0.002
+# Διαφάνεια 38 (server σε δικό του terminal, Ctrl+C για τέλος)
+uvicorn app_chat:app --reload
+# browser: http://127.0.0.1:8000/docs  ->  POST /chat -> Try it out
+{"session_id": "maria", "message": "Με λένε Μαρία."}
+{"session_id": "nikos", "message": "Με λένε Νίκο."}
+{"session_id": "maria", "message": "Πώς με λένε;"}
+# Διαφάνεια 41 (split terminal)
+python chat_memory.py --auto
+python chat_memory.py --auto --strategy summary
+python growth.py --turns 50
+python costs_report.py
+
+=== Διάλεξη 12 ===
+python build_index.py
+# Διαφάνεια 3
+python keyword_vs_meaning.py
+python keyword_vs_meaning.py "Η espresso μου έχει λίμνη από κάτω"
+# Διαφάνεια 8
+python embed.py "Η μηχανή καφέ στάζει νερό"
+python embed.py "Ο Παρθενώνας"
+# Διαφάνεια 15
+python similarity.py
+# Διαφάνεια 23
+python build_index.py
+python search.py "Η καφετιέρα βγάζει καπνούς"
+python search.py "ζεστός καφές" --category συσκευές
+python search.py
+# Διαφάνεια 29
+python eval_search.py
+# Διαφάνεια 30: νέα δοκιμή στο search_cases.json (κόμμα ανάμεσα στα {...})
+{"query": "η mixani den anavei", "expected": "F22"}
+# Διαφάνεια 31 (μόνο με κλειδί)
+python eval_search.py --model openai/text-embedding-3-small
+python eval_search.py --model gemini/gemini-embedding-001
+# Διαφάνεια 32
+python map2d.py "Η καφετιέρα βγάζει καπνούς"
+# Διαφάνεια 35
+python search.py

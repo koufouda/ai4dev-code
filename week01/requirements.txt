@@ -1,0 +1,4 @@
+litellm>=1.70
+python-dotenv>=1.0
+tiktoken>=0.7
+tenacity>=8.0   # για τις αυτόματες επαναλήψεις (num_retries) του LiteLLM

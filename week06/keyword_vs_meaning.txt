@@ -1,0 +1,18 @@
+keyword_vs_meaning.py · Εβδομάδα 6
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 12: αναζήτηση με λέξεις ή με νόημα; Η ίδια ερώτηση στο FAQ με δύο τρόπους.
+Αναζήτηση με λέξεις και με νόημα, δίπλα-δίπλα
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week06
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week06
+
+Μετά:
+  python keyword_vs_meaning.py
+  python keyword_vs_meaning.py "Η καφετιέρα βγάζει καπνούς"
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

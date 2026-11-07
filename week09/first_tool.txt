@@ -1,0 +1,19 @@
+first_tool.py · Εβδομάδα 9
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 17: το πρώτο εργαλείο, βήμα-βήμα. Τι στέλνουμε, τι ζητά το μοντέλο, τι του επιστρέφουμε.
+Ένα εργαλείο, βήμα-βήμα
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week09
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week09
+
+Μετά:
+  python first_tool.py
+  python first_tool.py "Έχετε σε απόθεμα τη ΜΠ-002;"
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

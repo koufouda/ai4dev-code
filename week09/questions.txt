@@ -1,0 +1,53 @@
+ΕΒΔΟΜΑΔΑ 9 · Εντολές για αντιγραφή-επικόλληση
+Όλες τρέχουν στο C:\ai4dev\week09 με ενεργό το (.venv).
+
+=== Μία φορά (εγκατάσταση) ===
+cd C:\ai4dev
+.venv\Scripts\activate
+pip install -r week09\requirements.txt
+cd week09
+python ingest.py
+
+=== Πριν από κάθε διάλεξη ===
+python check.py
+del actions.log
+
+=== Διάλεξη 17 ===
+# Διαφάνεια 4
+python no_tools.py
+# Διαφάνεια 11
+python first_tool.py
+python first_tool.py "Έχετε σε απόθεμα τη ΜΠ-002;"
+# Διαφάνεια 18
+python tools_demo.py
+python tools_demo.py "Πού είναι η παραγγελία 99999;"
+# Διαφάνεια 28
+python workflow.py
+python workflow.py 2
+# Διαφάνεια 34
+python eval_tools.py
+type actions.log
+# Διαφάνεια 36 (τελικό demo)
+uvicorn app_tools:app --reload
+#   browser: http://127.0.0.1:8000/docs → POST /chat
+#   {"question": "Πόσο κάνουν 2 ΜΠ-012 και μία ΜΠ-001;"}
+#   {"question": "Ακύρωσε την παραγγελία 49920."}
+
+=== Διάλεξη 18 ===
+# Διαφάνεια 4
+python agent_demo.py "Η παραγγελία 41188 έχει μια ΜΠ-001 που γράφει E05. Καλύπτεται από την εγγύηση;"
+# Διαφάνεια 12
+python react_text.py
+python react_text.py "Πόσο κάνουν 2 ΜΠ-012 μαζί με μία ΜΠ-001;"
+# Διαφάνεια 19
+python agent_vs_workflow.py
+# Διαφάνεια 26
+python agent_limits.py
+# Διαφάνεια 31
+python eval_agent.py
+python eval_agent.py --workflow
+python eval_agent.py --max-steps 4
+# Διαφάνειες 33-34 (τελικό demo)
+python extra_tool.py
+python extra_tool.py "Θέλω τον φθηνότερο μύλο καφέ με απόθεμα. Πόσα μεταφορικά πληρώνω στην Κρήτη;"
+python agent_demo.py

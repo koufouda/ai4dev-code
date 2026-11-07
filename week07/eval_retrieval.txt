@@ -1,0 +1,25 @@
+eval_retrieval.py · Εβδομάδα 7
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 14: πόσο καλά βρίσκει η αναζήτηση το σωστό κομμάτι; hit@k και MRR στο rag_cases.json.
+
+Φτιάχνει το ευρετήριο στη μνήμη, για να αλλάζετε μέθοδο, μέγεθος κομματιών και stemming χωρίς να πειράξετε τη βάση.
+hit@1, hit@k, MRR στο rag_cases.json (--all, --method, --rerank, --size, --no-stem)
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week07
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week07
+
+Μετά:
+  python eval_retrieval.py                        (hybrid, k=4, κομμάτια 800)
+  python eval_retrieval.py --method vector
+  python eval_retrieval.py --method bm25 --no-stem
+  python eval_retrieval.py --size 300
+  python eval_retrieval.py --rerank               (hybrid + reranking: κάνει κλήσεις στο LLM)
+  python eval_retrieval.py --all                  (vector, bm25, hybrid σε έναν πίνακα)
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

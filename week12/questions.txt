@@ -1,0 +1,28 @@
+ΕΒΔΟΜΑΔΑ 12 · Εντολές για αντιγραφή-επικόλληση
+Όλες τρέχουν στο C:\ai4dev\week12 με ενεργό το (.venv), σε PowerShell.
+
+=== Μία φορά ===
+cd C:\ai4dev
+.venv\Scripts\activate
+pip install -r week12\requirements.txt -r week12\requirements-dev.txt
+cd week12
+python check.py
+
+=== Διάλεξη 23 ===
+# Διαφάνεια 4 (η Πυθία στο cloud: βλ. DEPLOY.md, ΠΡΙΝ από το μάθημα)
+$env:APP_TOKEN="<ίδιο με το cloud>"
+python release_check.py https://<η-διεύθυνση>
+# Διαφάνεια 10 (DEPLOY.md, δρόμος Α)
+$env:EMBED_MODEL="gemini/gemini-embedding-001" ; Remove-Item -Recurse db ; python ingest.py
+az containerapp up --name pythia --resource-group pythia-rg --location westeurope --environment pythia-env --source .
+# Διαφάνεια 15
+python remote_eval.py https://<η-διεύθυνση>
+# Εργαστήριο
+python smoke_test.py https://<η-διεύθυνση>
+python release_check.py https://<η-διεύθυνση>
+
+=== Διάλεξη 24 ===
+# Το πρωί της διάλεξης
+python release_check.py https://<η-διεύθυνση>
+# Μετά τη 24: σβήσιμο
+az group delete --name pythia-rg

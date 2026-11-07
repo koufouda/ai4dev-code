@@ -1,0 +1,19 @@
+pythia_rag.py · Εβδομάδα 7
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Εβδομάδα 7: κοινές συναρτήσεις για RAG. Διάβασμα εγγράφων, καθάρισμα, κομμάτια, αναζήτηση, απάντηση.
+
+Το χρησιμοποιούν όλα τα scripts των διαλέξεων 13 και 14.
+Όλες οι κοινές συναρτήσεις (διάβασμα, καθάρισμα, κομμάτια, βάση, αναζήτηση, απάντηση)
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week07
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week07
+
+Δεν το τρέχετε μόνο του. Είναι «βιβλιοθήκη»: το χρησιμοποιούν τα app_rag.py, ask.py, bm25_demo.py, check.py, chunk_demo.py, clean_demo.py, compare.py, eval_retrieval.py, ingest.py, no_rag.py, read_doc.py, rerank_demo.py.
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

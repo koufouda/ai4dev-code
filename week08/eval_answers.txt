@@ -1,0 +1,20 @@
+eval_answers.py · Εβδομάδα 8
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 15: αξιολόγηση απαντήσεων. Σωστές, με παραπομπές που ελέγχονται, «δεν ξέρω» όπου πρέπει.
+Σωστές, «δεν ξέρω», παραπομπές, πιστότητα (--threshold, --judge)
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week08
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week08
+
+Μετά:
+  python eval_answers.py                     (20 ερωτήσεις με απάντηση + 6 χωρίς)
+  python eval_answers.py --threshold 0       (χωρίς κατώφλι)
+  python eval_answers.py --judge             (και κριτής πιστότητας: διπλές κλήσεις)
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

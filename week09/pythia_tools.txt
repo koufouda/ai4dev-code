@@ -1,0 +1,20 @@
+pythia_tools.py · Εβδομάδα 9
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Εβδομάδα 9, διάλεξη 17: η Πυθία με εργαλεία. Συναρτήσεις που καλεί το μοντέλο, τα σχήματά τους, και ο βρόχος.
+
+Χτίζει πάνω στο pythia_rag.py (εβδομάδα 7) και στο pythia_safe.py (διάλεξη 15).
+Τα 7 εργαλεία, τα σχήματά τους, run_tool, ο βρόχος chat_with_tools
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week09
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week09
+
+Συνήθως δεν το τρέχετε μόνο του: το χρησιμοποιούν τα agent_vs_workflow.py, app_tools.py, check.py, eval_agent.py, eval_tools.py, extra_tool.py, first_tool.py, pythia_agent.py, react_text.py, tools_demo.py, workflow.py.
+Αν το τρέξετε, κάνει έναν γρήγορο αυτοέλεγχο:  python pythia_tools.py
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

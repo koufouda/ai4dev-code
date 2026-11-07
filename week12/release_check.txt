@@ -1,0 +1,15 @@
+release_check.py · Εβδομάδα 12
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 23: «έτοιμο για τη διάλεξη 24;» Τρέχει όλους τους ελέγχους του μαθήματος με τη σειρά και βγάζει ένα σύνολο.
+secret_scan → pytest → smoke → remote_eval: «ΈΤΟΙΜΟ για τη διάλεξη 24»
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week12
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week12
+
+Μετά:
+  python release_check.py https://pythia.example.com
+  python release_check.py http://localhost:8000

@@ -1,0 +1,102 @@
+[
+ {
+  "question": "Κάθε πότε πρέπει να κάνω αφαλάτωση στη ΜΠ-001;",
+  "must_contain": "200 φλιτζάνια",
+  "source": "MP-001_Egxeiridio.pdf"
+ },
+ {
+  "question": "Πόσο κρατάει το πρόγραμμα αφαλάτωσης;",
+  "must_contain": "25 λεπτά",
+  "source": "MP-001_Egxeiridio.pdf"
+ },
+ {
+  "question": "Τι σημαίνει το σφάλμα E05;",
+  "must_contain": "Χαμηλή πίεση αντλίας",
+  "source": "MP-001_Egxeiridio.pdf"
+ },
+ {
+  "question": "Η οθόνη γράφει E02, τι κάνω;",
+  "must_contain": "30 λεπτά",
+  "source": "MP-001_Egxeiridio.pdf"
+ },
+ {
+  "question": "Πόσα γραμμάρια καφέ βάζω για διπλό espresso;",
+  "must_contain": "14 έως 18",
+  "source": "MP-001_Egxeiridio.pdf"
+ },
+ {
+  "question": "Τι χωρητικότητα έχει το δοχείο νερού;",
+  "must_contain": "1,8 λίτρα",
+  "source": "MP-001_Egxeiridio.pdf"
+ },
+ {
+  "question": "Κάθε πότε αλλάζω το φίλτρο νερού;",
+  "must_contain": "κάθε 2 μήνες",
+  "source": "MP-001_Egxeiridio.pdf"
+ },
+ {
+  "question": "Δεν βγάζει αφρόγαλα το ακροφύσιο",
+  "must_contain": "βελόνα καθαρισμού",
+  "source": "MP-001_Egxeiridio.pdf"
+ },
+ {
+  "question": "Πόσα χρόνια εγγύηση έχει μια μηχανή espresso Αστέρι;",
+  "must_contain": "36 μήνες",
+  "source": "Eggyisi_kai_Service.pdf"
+ },
+ {
+  "question": "Καλύπτει η εγγύηση τα άλατα;",
+  "must_contain": "δεν καλύπτει βλάβες από άλατα",
+  "source": "Eggyisi_kai_Service.pdf"
+ },
+ {
+  "question": "Πόσο καιρό κάνει μια επισκευή;",
+  "must_contain": "10 εργάσιμες",
+  "source": "Eggyisi_kai_Service.pdf"
+ },
+ {
+  "question": "Δίνετε δανεική μηχανή όσο επισκευάζεται η δική μου;",
+  "must_contain": "δανεική μηχανή",
+  "source": "Eggyisi_kai_Service.pdf"
+ },
+ {
+  "question": "Πόσο κοστίζει ο έλεγχος για επισκευή εκτός εγγύησης;",
+  "must_contain": "25 €",
+  "source": "Eggyisi_kai_Service.pdf"
+ },
+ {
+  "question": "Τι είναι ο αριθμός RMA;",
+  "must_contain": "RMA-2026",
+  "source": "Eggyisi_kai_Service.pdf"
+ },
+ {
+  "question": "Σε πόσες δόσεις μπορώ να πάρω μηχανή των 400 ευρώ;",
+  "must_contain": "12 άτοκες δόσεις",
+  "source": "Oroi_Polisis.docx"
+ },
+ {
+  "question": "Πόσο κοστίζει η αποστολή στη Νάξο για παραγγελία 30 ευρώ;",
+  "must_contain": "5,90",
+  "source": "Oroi_Polisis.docx"
+ },
+ {
+  "question": "Μπορώ να επιστρέψω ανοιγμένο καφέ;",
+  "must_contain": "έχουν ανοιχτεί",
+  "source": "Oroi_Polisis.docx"
+ },
+ {
+  "question": "Σε πόσες μέρες μπορώ να υπαναχωρήσω;",
+  "must_contain": "14 ημέρες από την παραλαβή",
+  "source": "Oroi_Polisis.docx"
+ },
+ {
+  "question": "Πόσο καιρό κρατάτε τα τιμολόγια μου;",
+  "must_contain": "5 χρόνια",
+  "source": "Politiki_Aporritou.docx"
+ },
+ {
+  "question": "Χρησιμοποιείτε τις συνομιλίες με την Πυθία για εκπαίδευση;",
+  "must_contain": "Δεν χρησιμοποιούμε τις συνομιλίες",
+  "source": "Politiki_Aporritou.docx"
+ }
+]
