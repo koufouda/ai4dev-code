@@ -9,7 +9,7 @@ next_token.py · Εβδομάδα 1
     python next_token.py "Το πρωί πίνω έναν"
     python next_token.py --max_tokens 3 "Το πρωί πίνω έναν"
     python next_token.py --max_tokens 3 --temperature 1.5 "Το πρωί πίνω έναν"
-1 | Τις πιθανότητες για την επόμενη λέξη (χρειάζεται μοντέλο με logprobs)
+Τις πιθανότητες για την επόμενη λέξη (χρειάζεται μοντέλο με logprobs)
 
 ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
 Σε κάθε νέο τερματικό, πρώτα:

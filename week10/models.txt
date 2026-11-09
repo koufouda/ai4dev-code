@@ -1,7 +1,0 @@
-# Τα μοντέλα που συγκρίνουμε στη διάλεξη 20, ένα ανά γραμμή (οι γραμμές με # αγνοούνται).
-# Τα τοπικά θέλουν πρώτα:  ollama pull <όνομα χωρίς το ollama_chat/>
-# Ελέγξτε τα ονόματα στο ollama.com/library πριν από το μάθημα· αλλάζουν συχνά.
-anthropic/claude-haiku-5-5
-ollama_chat/gemma3:4b
-ollama_chat/qwen3.5:4b
-ollama_chat/gemma4:e2b

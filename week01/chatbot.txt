@@ -2,15 +2,18 @@ chatbot.py · Εβδομάδα 1
 ========================================
 
 ΤΙ ΚΑΝΕΙ
-Διάλεξη 1, τελικό demo: ένα chatbot με μνήμη. Γράψτε 'τέλος' για έξοδο.
-1 | Chatbot με μνήμη σε λίγες γραμμές
+Διάλεξη 2: chatbot με μνήμη, που δείχνει μετά από κάθε απάντηση tokens, χρόνο και κόστος.
+Chatbot με μνήμη. Μετά από κάθε απάντηση: tokens εισόδου/εξόδου, «σκέψη», cache, χρόνος και κόστος
 
 ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
 Σε κάθε νέο τερματικό, πρώτα:
   Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week01
   Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week01
 
-Μετά:  python chatbot.py
+Μετά:
+  python chatbot.py            (γράψτε «τέλος» για έξοδο)
+  set MODEL=ollama_chat/gemma3:4b   και μετά  python chatbot.py   (τοπικό μοντέλο, cmd)
 
 ΤΙ ΧΡΕΙΑΖΕΤΑΙ
 - Κλειδί Anthropic στο αρχείο .env (C:\ai4dev\.env ή ~/ai4dev/.env). Δείτε το README, ενότητα «Κλειδιά».
+- Το Ollama ανοιχτό, για τοπικά μοντέλα ή embeddings (ollama list για έλεγχο).

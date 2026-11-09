@@ -68,7 +68,7 @@ python check.py
 
 ## 4. Τα αρχεία της εβδομάδας
 
-1. Python 3.10 ή νεότερη.
+1. Python 3.13 (python.org, με «Add python.exe to PATH») και PyCharm Community (jetbrains.com/pycharm).
 2. Εγκατάσταση πακέτων:
 
    ```bash
@@ -92,9 +92,9 @@ python check.py
 |---|---|---|
 | `tokens.py` | 1 | Πόσα tokens χρειάζονται τα ελληνικά σε σχέση με τα αγγλικά |
 | `next_token.py` | 1 | Τις πιθανότητες για την επόμενη λέξη (χρειάζεται μοντέλο με logprobs) |
-| `chatbot.py` | 1 | Chatbot με μνήμη σε λίγες γραμμές |
+| `chatbot.py` | 1-2 | Chatbot με μνήμη. Μετά από κάθε απάντηση: tokens εισόδου/εξόδου, «σκέψη», cache, χρόνος και κόστος |
 | `ask.py` | 2 | Μία κλήση με χρόνο, tokens και κόστος. Με `--local` τρέχει στο Ollama |
-| `pythia.py` | 2 | Το ίδιο μοντέλο με τρία διαφορετικά system prompts |
+| `pythia.py` | 2 | Συνομιλία με μία από τρεις περσόνες: `python pythia.py 1` (Βοηθός), `2` (Πυθία, προεπιλογή), `3` (Senior dev) |
 | `temperature.py` | 2 | Η ίδια ερώτηση με temperature 0 και 1 |
 | `stream.py` | 2 | Streaming και χρόνος μέχρι την πρώτη λέξη |
 | `arena.py` | 2 | Τυφλή σύγκριση μοντέλων με ψηφοφορία |

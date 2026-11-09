@@ -1,4 +1,0 @@
-# Μόνο για ανάπτυξη και CI (όχι μέσα στο container).
-pytest
-httpx
-matplotlib

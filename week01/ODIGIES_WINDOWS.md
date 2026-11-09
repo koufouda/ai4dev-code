@@ -6,16 +6,18 @@
 
 ## 2. Εγκαταστήστε
 
-- Python 3.10 ή νεότερη από το python.org. Στην εγκατάσταση τσεκάρετε το «Add Python to PATH».
+- Python 3.13 από το python.org. Στην εγκατάσταση τσεκάρετε το «Add Python to PATH».
 - Ollama από το ollama.com.
 
 ## 3. Στήστε το περιβάλλον (PowerShell)
 
-Αν το `python` βγάζει «Python was not found», τα Windows το στέλνουν στο Microsoft Store. Χρησιμοποιήστε τον launcher `py`, που εγκαθίσταται μαζί με την Python από το python.org. Μετά το `activate`, το `python` δουλεύει κανονικά μέσα στο venv.
+Αν το `python` ανοίγει το Microsoft Store ή βγάζει «Python was not found»: Ρυθμίσεις → Εφαρμογές → Ρυθμίσεις για προχωρημένους → Ψευδώνυμα εκτέλεσης εφαρμογών, και κλείστε τα python.exe / python3.exe. Μετά ξανανοίξτε το terminal.
+
+Οι ίδιες εντολές δουλεύουν και στο Command Prompt (cmd), που είναι συχνά το terminal του PyCharm.
 
 ```powershell
 cd C:\ai4dev
-py -m venv .venv
+python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 copy .env.example .env
