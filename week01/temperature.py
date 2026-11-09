@@ -1,4 +1,4 @@
-"""Διάλεξη 2: η ίδια ερώτηση 4 φορές με temperature 0 και 4 φορές με temperature 1.
+"""Διάλεξη 2: η ίδια ερώτηση 4 φορές με temperature 0, 1, 1,5 και 2.
 
 Χρήση:  python temperature.py "Δώσε ένα όνομα για ένα καφέ στην Πλάκα."
 
@@ -17,7 +17,7 @@ if prompt == "":
     prompt = "Δώσε ένα όνομα για ένα καφέ στην Πλάκα. Μόνο το όνομα."
 print(f"[{model}]")
 
-for t in [0.0, 1.0]:
+for t in [0.0, 1.0, 1.5, 2.0]:
     print(f"\ntemperature = {t}")
     for i in range(4):
         message = {"role": "user", "content": prompt}

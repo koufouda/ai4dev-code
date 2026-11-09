@@ -1,0 +1,17 @@
+chatbot-local.py · Εβδομάδα 1
+========================================
+
+ΤΙ ΚΑΝΕΙ
+Διάλεξη 2, διαφάνεια 28: το chatbot μιας τράπεζας σε μικρό τοπικό μοντέλο, για να το «σπάσουμε» ζωντανά.
+
+ΠΩΣ ΤΟ ΤΡΕΧΕΤΕ
+Σε κάθε νέο τερματικό, πρώτα:
+  Windows:  cd C:\ai4dev  ->  .venv\Scripts\activate  ->  cd week01
+  Linux:    cd ~/ai4dev  ->  source .venv/bin/activate  ->  cd week01
+
+Μετά:
+  python chatbot-local.py          (γράψτε «τέλος» για έξοδο)
+  Χρειάζεται: Ollama ανοιχτό και  ollama pull gemma3:4b
+
+ΤΙ ΧΡΕΙΑΖΕΤΑΙ
+- Το Ollama ανοιχτό και το gemma3:4b κατεβασμένο (ollama list για έλεγχο). Δεν χρειάζεται κλειδί.
